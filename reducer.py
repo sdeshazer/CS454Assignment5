@@ -26,15 +26,15 @@ def reducer():
             currentSize += size
         else:
             if currentPage:
-                print(currentPage + " {visits} " + currentVisits)
-                print(currentPage + " {size} " + currentSize)
+                print(str(currentPage) + " {visits} " + str(currentVisits))
+                print(str(currentPage) + " {size} " + str(currentSize))
             currentPage = page
             currentVisits = numOfVisits
             currentSize = size
 
     if currentPage == page:
-        print(currentPage + " {visits} " + currentVisits)
-        print(currentPage + " {size} " + currentSize)
+        print(str(currentPage) + " {visits} " + str(currentVisits))
+        print(str(currentPage) + " {size} " + str(currentSize))
 
 
 if __name__ == '__main__':
