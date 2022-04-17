@@ -1,5 +1,5 @@
 # ! /usr/bin/python3
-
+# Samantha deshazer | pycharm
 import sys
 
 
@@ -7,7 +7,6 @@ def read_input():
     for line in sys.stdin:
         line = line.strip()
         data = line.split()
-
         if data[-1] == 'T':
             print('%s\t%s\t%s' % (data[0], data[1], data[2]))
 
